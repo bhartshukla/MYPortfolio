@@ -1,0 +1,1404 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mr Bharat | Portfolio</title>
+    <meta name="description"
+        content="Portfolio of Mr Bharat - Founder & CEO of XBzin AI Hub, Web Developer, AI Researcher">
+    <meta property="og:title" content="Mr Bharat | Portfolio">
+    <meta property="og:description"
+        content="Portfolio of Mr Bharat - Founder & CEO of XBzin AI Hub, Web Developer, AI Researcher">
+    <meta property="og:type" content="website">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <script>
+        tailwind.config = {
+            darkMode: 'class',
+            theme: {
+                extend: {
+                    colors: {
+                        twitter: {
+                            blue: '#1D9BF0',
+                            dark: '#000000',
+                            light: '#F7F9F9',
+                            gray: '#6E767D',
+                            'dark-border': '#38444D'
+                        }
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+   
+</head>
+
+<body class="dark">
+    <div class="flex min-h-screen">
+        <!-- Left Sidebar -->
+        <div class="twitter-sidebar w-1/5 hidden md:block">
+            <div class="p-4">
+                <nav class="space-y-2 mb-8">
+                    <a href="#" class="flex items-center py-3 px-4 rounded-full twitter-button tab-button active"
+                        data-tab="home">
+                        <i class="fas fa-home text-xl mr-4"></i>
+                        <span class="text-lg">Home</span>
+                    </a>
+                    <a href="#" class="flex items-center py-3 px-4 rounded-full twitter-button tab-button"
+                        data-tab="about">
+                        <i class="fas fa-user text-xl mr-4"></i>
+                        <span class="text-lg">About</span>
+                    </a>
+                    <a href="#" class="flex items-center py-3 px-4 rounded-full twitter-button tab-button"
+                        data-tab="skills">
+                        <i class="fas fa-code text-xl mr-4"></i>
+                        <span class="text-lg">Skills</span>
+                    </a>
+                    <a href="#" class="flex items-center py-3 px-4 rounded-full twitter-button tab-button"
+                        data-tab="projects">
+                        <i class="fas fa-project-diagram text-xl mr-4"></i>
+                        <span class="text-lg">Projects</span>
+                    </a>
+                    <a href="#" class="flex items-center py-3 px-4 rounded-full twitter-button tab-button"
+                        data-tab="experience">
+                        <i class="fas fa-briefcase text-xl mr-4"></i>
+                        <span class="text-lg">Experience</span>
+                    </a>
+                    <a href="#" class="flex items-center py-3 px-4 rounded-full twitter-button tab-button"
+                        data-tab="achievements">
+                        <i class="fas fa-trophy text-xl mr-4"></i>
+                        <span class="text-lg">Achievements</span>
+                    </a>
+                    <a href="#" class="flex items-center py-3 px-4 rounded-full twitter-button tab-button"
+                        data-tab="blog">
+                        <i class="fas fa-blog text-xl mr-4"></i>
+                        <span class="text-lg">Blog</span>
+                    </a>
+                    <a href="#" class="flex items-center py-3 px-4 rounded-full twitter-button tab-button"
+                        data-tab="contact">
+                        <i class="fas fa-envelope text-xl mr-4"></i>
+                        <span class="text-lg">Contact</span>
+                    </a>
+                </nav>
+
+                <a href="https://xbzintouch.netlify.app/" target="_blank">
+                    <button
+                        class="w-full bg-twitter-blue text-white font-bold py-3 rounded-full mb-6 hover:bg-blue-600 transition">
+                        Our StartUp
+                    </button>
+                </a>
+
+                <div class="sidebar-profile flex items-center p-3 rounded-full twitter-button">
+                    <div class="relative">
+                        <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full">
+                        <div class="active-indicator"></div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="font-bold">Mr Bharat</div>
+                        <div class="text-twitter-gray">@BharatSh2121</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Bottom Navigation -->
+        <div class="twitter-sidebar md:hidden">
+            <div class="sidebar-content">
+                <a href="#" class="flex flex-col items-center py-2 tab-button active" data-tab="home">
+                    <i class="fas fa-home text-lg"></i>
+                    <span class="text-xs mt-1">Home</span>
+                </a>
+                <a href="#" class="flex flex-col items-center py-2 tab-button" data-tab="about">
+                    <i class="fas fa-user text-lg"></i>
+                    <span class="text-xs mt-1">About</span>
+                </a>
+                <a href="#" class="flex flex-col items-center py-2 tab-button" data-tab="skills">
+                    <i class="fas fa-code text-lg"></i>
+                    <span class="text-xs mt-1">Skills</span>
+                </a>
+                <a href="#" class="flex flex-col items-center py-2 tab-button" data-tab="projects">
+                    <i class="fas fa-project-diagram text-lg"></i>
+                    <span class="text-xs mt-1">Projects</span>
+                </a>
+                <a href="#" class="flex flex-col items-center py-2 tab-button" data-tab="experience">
+                    <i class="fas fa-briefcase text-lg"></i>
+                    <span class="text-xs mt-1">Experience</span>
+                </a>
+                <a href="#" class="flex flex-col items-center py-2 tab-button" data-tab="achievements">
+                    <i class="fas fa-trophy text-lg"></i>
+                    <span class="text-xs mt-1">Achievements</span>
+                </a>
+                <a href="#" class="flex flex-col items-center py-2 tab-button" data-tab="contact">
+                    <i class="fas fa-envelope text-lg"></i>
+                    <span class="text-xs mt-1">Contact</span>
+                </a>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="twitter-main flex-1 md:w-3/5">
+            <!-- Header -->
+            <header class="sticky top-0 z-10 backdrop-blur-md bg-opacity-80 p-4 border-b">
+                <div class="flex justify-between items-center">
+                    <div class="font-bold text-xl">Portfolio</div>
+                    <div class="flex items-center space-x-4">
+                        <div class="visitor-counter">
+                            Visitors: <span id="visitor-count">1247</span>
+                        </div>
+                        <button id="theme-toggle" class="p-2 rounded-full twitter-button">
+                            <i class="fas fa-moon"></i>
+                        </button>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Home Tab -->
+            <div id="home" class="tab-content active">
+                <!-- Profile Banner -->
+                <div class="profile-banner"></div>
+
+                <!-- Profile Info -->
+                <div class="px-4 pb-4 border-b">
+                    <div class="flex justify-between">
+                        <div class="relative -mt-16">
+                            <img src="image.png" alt="Mr Bharat"
+                                class="w-32 h-32 rounded-full border-4 border-twitter-dark">
+                        </div>
+                        <div class="mt-4">
+                            <a href="bh.pdf" download="MrBharat_Resume.pdf"
+                                class="border border-twitter-blue text-twitter-blue font-bold py-2 px-4 rounded-full hover:bg-twitter-blue hover:bg-opacity-10 transition flex items-center justify-center gap-2">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                                </svg>
+                                Download Résumé
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <h1 class="text-2xl font-bold">Bhart Shukla</h1>
+                        <div class="text-twitter-gray">@BharatSh2121</div>
+                    </div>
+
+                    <div class="mt-4">
+                        <p>Frontend + Backend Developer • Intern & Freelancer </p>
+                        <div class="flex items-center mt-2 text-twitter-gray">
+                            <div> <i class="fas fa-link mr-2"></i>
+
+                            </div>
+                            <span style="margin-left: 10px; font-size: 20px;" class="text-twitter-blue hover:underline">
+                                <a href="https://github.com/bhartshukla" target="_blank">| Github |</a>
+                            </span>
+                            <span style="margin-left: 5px; font-size: 20px;" class="text-twitter-blue hover:underline">
+                                <a href="https://www.linkedin.com/in/bhartshukla/" target="_blank"> linkedin |</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <!-- Skills in Bio Section -->
+                    <div class="mt-4">
+                        <h3 class="font-bold mb-2">Top Skills:</h3>
+                        <div class="flex flex-wrap gap-2">
+                            <span class="badge">JavaScript</span>
+                            <span class="badge">React</span>
+                            <span class="badge">Css</span>
+                            <span class="badge">Html</span>
+                            <span class="badge">Node.js</span>
+                            <span class="badge">jAVA</span>
+                            <span class="badge">MongoDb</span>
+                            <span class="badge">MySql</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Pinned Post -->
+                <div class="twitter-post p-4 border-b">
+                    <div class="flex justify-between items-center mb-2">
+                        <div class="flex items-center">
+                            <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                            <div>
+                                <div class="font-bold">Mr Bharat</div>
+                                <div class="text-twitter-gray">@BharatSh2121· 2h</div>
+                            </div>
+                        </div>
+                        <i class="fas fa-thumbtack text-twitter-gray"></i>
+                    </div>
+                    <div class="mt-3">
+                        <p>🚀 Pinned:"XBzin Ecosystem | Empowering Innovation with AI Tools, Research Solutions, and
+                            Digital Services. Launched just a month ago, our startup is already driving innovation and
+                            transforming ideas into intelligent solutions."</p>
+                        <div class="mt-3 flex space-x-4 text-twitter-gray">
+                            <button class="flex items-center twitter-icon">
+                                <i class="far fa-comment mr-1"></i>
+                                <span>24</span>
+                            </button>
+                            <button class="flex items-center twitter-icon">
+                                <i class="fas fa-retweet mr-1"></i>
+                                <span>18</span>
+                            </button>
+                            <button class="flex items-center twitter-icon">
+                                <i class="far fa-heart mr-1"></i>
+                                <span>127</span>
+                            </button>
+                            <button class="flex items-center twitter-icon">
+                                <i class="far fa-share-square mr-1"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Status Update -->
+                <div class="twitter-post p-4">
+                    <div class="flex">
+                        <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                        <div class="flex-1">
+                            <div class="font-bold">Mr Bharat</div>
+                            <div class="text-twitter-gray">@BharatSh2121 · 4h</div>
+                            <div class="mt-3">
+                                <p>CropGuard AI (In Progress): Building an AI-powered farming assistant using Core
+                                    JavaScript and APIs to deliver region-specific crop insights, predictive yield
+                                    estimates, and optimized fertilizer recommendations, helping farmers make
+                                    data-driven, cost-effective, and sustainable decisions. </p>
+                                <div class="mt-3 bg-twitter-blue bg-opacity-10 p-3 rounded-lg">
+                                    <p class="text-sm">🟢 <span class="font-bold">Active now:</span> Developing the new
+                                        project for Xbzin Ecosystem</p>
+                                </div>
+                            </div>
+                            <div class="mt-3 flex space-x-4 text-twitter-gray">
+                                <button class="flex items-center twitter-icon">
+                                    <i class="far fa-comment mr-1"></i>
+                                    <span>12</span>
+                                </button>
+                                <button class="flex items-center twitter-icon">
+                                    <i class="fas fa-retweet mr-1"></i>
+                                    <span>7</span>
+                                </button>
+                                <button class="flex items-center twitter-icon">
+                                    <i class="far fa-heart mr-1"></i>
+                                    <span>42</span>
+                                </button>
+                                <button class="flex items-center twitter-icon">
+                                    <i class="far fa-share-square mr-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Recent Updates -->
+                <div class="twitter-post p-4">
+                    <div class="flex">
+                        <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                        <div class="flex-1">
+                            <div class="font-bold">Mr Bharat</div>
+                            <div class="text-twitter-gray">@BharatSh2121 · 1d</div>
+                            <div class="mt-3">
+                                <p>Patents Filed: Developed an AI-driven Mental Health Monitoring System analyzing
+                                    emotions, confidence, and satisfaction to provide personalized well-being insights,
+                                    and CropGuard AI, an intelligent farming assistant offering region-specific crop
+                                    insights, yield predictions, and optimized fertilizer recommendations.</p>
+                                <div class="mt-3 flex flex-wrap gap-2">
+                                    <span class="badge">AI Research</span>
+                                    <span class="badge">Neural Networks</span>
+                                    <span class="badge">Edge Computing</span>
+                                </div>
+                            </div>
+                            <div class="mt-3 flex space-x-4 text-twitter-gray">
+                                <button class="flex items-center twitter-icon">
+                                    <i class="far fa-comment mr-1"></i>
+                                    <span>8</span>
+                                </button>
+                                <button class="flex items-center twitter-icon">
+                                    <i class="fas fa-retweet mr-1"></i>
+                                    <span>5</span>
+                                </button>
+                                <button class="flex items-center twitter-icon">
+                                    <i class="far fa-heart mr-1"></i>
+                                    <span>31</span>
+                                </button>
+                                <button class="flex items-center twitter-icon">
+                                    <i class="far fa-share-square mr-1"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- About Tab -->
+            <div id="about" class="tab-content">
+                <div class="p-4">
+                    <h2 class="text-2xl font-bold mb-4">About Me</h2>
+
+                    <div class="bg-twitter-blue bg-opacity-10 p-4 rounded-lg mb-6">
+                        <p class="text-lg">"Innovating at the intersection of AI and web technologies to build solutions
+                            that matter."</p>
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold mb-3">Bio</h3>
+                        <p>I am a passionate Full Stack Developer in progress, currently strengthening my
+                            problem-solving abilities through Java + Data Structures & Algorithms (DSA).With hands-on
+                            experience in frontend and backend development, I specialize in creating responsive,
+                            user-friendly applications by working across the full web stack.
+                        <p>
+
+                        </p>With experience as a Frontend & Backend Developer, and Freelancer (15+ projects completed),
+                        I bring strong skills in system design, project management, and team leadership.</p>
+
+                    </div>
+
+                    <div class="mb-6">
+                        <h3 class="text-xl font-bold mb-3">Skills</h3>
+                        <div class="flex flex-wrap gap-2">
+
+                            <div class="flex flex-wrap gap-2">
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">React</span>
+                                <span class="badge">Css</span>
+                                <span class="badge">Html</span>
+                                <span class="badge">Node.js</span>
+                                <span class="badge">jAVA</span>
+                                <span class="badge">MongoDb</span>
+                                <span class="badge">MySql</span>
+                                <span class="badge">GSAP</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <h3 class="text-xl font-bold mb-3">Education</h3>
+                        <div class="space-y-4">
+
+                            <div class="p-4 rounded-lg border">
+                                <h4 class="font-bold">Bachelor in Computer Application</h4>
+                                <p class="text-twitter-gray">Amity University, Lucknow • 2023–2026</p>
+                                <p class="mt-2">Currently pursuing with 9+ CGPA and hands-on experience in practical
+                                    projects and development.</p>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Skills Tab -->
+            <div id="skills" class="tab-content">
+                <div class="p-4">
+                    <h2 class="text-2xl font-bold mb-4">Technical Skills</h2>
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4">Programming Languages & Frameworks</h3>
+                        <div class="skills-grid">
+
+                            <div class="skill-item">
+                                <i class="fab fa-js skill-icon"></i>
+                                <div class="skill-name">JavaScript</div>
+                                <div class="skill-level">Advanced</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-react skill-icon"></i>
+                                <div class="skill-name">React</div>
+                                <div class="skill-level">Intermediate</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-html5 skill-icon"></i>
+                                <div class="skill-name">HTML</div>
+                                <div class="skill-level">Advanced</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-brands fa-css3-alt skill-icon"></i>
+                                <div class="skill-name">CSS</div>
+                                <div class="skill-level">Advanced</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fab fa-node-js skill-icon"></i>
+                                <div class="skill-name">Node.js</div>
+                                <div class="skill-level">Intermediate</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fas fa-database skill-icon"></i>
+                                <div class="skill-name">SQL</div>
+                                <div class="skill-level">Intermediate</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-solid fa-globe skill-icon"></i>
+                                <div class="skill-name">GSAP</div>
+                                <div class="skill-level">Intermediate</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+                                <i class="fa-solid fa-globe skill-icon"></i>
+                                <div class="skill-name">ThreeJS</div>
+                                <div class="skill-level">Intermediate</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+                                <i class="fab fa-java skill-icon"></i>
+                                <div class="skill-name">Java</div>
+                                <div class="skill-level">Intermediate</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="mb-8">
+                        <h3 class="text-xl font-bold mb-4">Tools & Platforms</h3>
+                        <div class="skills-grid">
+                            <div class="skill-item">
+
+                                <div class="skill-name">Git</div>
+                                <div class="skill-level">Intermediate</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="skill-item">
+
+                                <div class="skill-name">Thunder Client</div>
+                                <div class="skill-level">Intermediate</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+
+                                <div class="skill-name">Chrome DevTools</div>
+                                <div class="skill-level">Intermediate</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 75%"></div>
+                                </div>
+                            </div>
+
+                            <div class="skill-item">
+
+                                <div class="skill-name">Google Cloud</div>
+                                <div class="skill-level">Intermediate</div>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" style="width: 70%"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Projects Tab -->
+            <div id="projects" class="tab-content">
+                <div class="p-4">
+                    <h2 class="text-2xl font-bold mb-4">Projects</h2>
+
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <button
+                            class="filter-button px-4 py-2 rounded-full border border-twitter-blue text-twitter-blue hover:bg-twitter-blue hover:bg-opacity-10 transition active"
+                            data-filter="all">All</button>
+                        <button
+                            class="filter-button px-4 py-2 rounded-full border border-twitter-blue text-twitter-blue hover:bg-twitter-blue hover:bg-opacity-10 transition"
+                            data-filter="ai">Frontend</button>
+                        <button
+                            class="filter-button px-4 py-2 rounded-full border border-twitter-blue text-twitter-blue hover:bg-twitter-blue hover:bg-opacity-10 transition"
+                            data-filter="web">Backend</button>
+                        <button
+                            class="filter-button px-4 py-2 rounded-full border border-twitter-blue text-twitter-blue hover:bg-twitter-blue hover:bg-opacity-10 transition"
+                            data-filter="mobile">FullStack</button>
+                    </div>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <!-- Original Project 1 -->
+
+
+                        <!-- 4 Core JavaScript GSAP Projects -->
+                        <div class="project-card p-4 rounded-lg border" data-category="ai">
+                            <h3 class="text-xl font-bold mb-3">Interactive Portfolio Animations</h3>
+                            <p class="text-twitter-gray mb-4">A fully animated portfolio homepage using GSAP timelines,
+                                smooth reveals, and parallax effects powered by core JavaScript.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">GSAP</span>
+                                <span class="badge">Frontend</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-twitter-blue hover:underline">Live Demo</a>
+                                <a href="#" class="text-twitter-blue hover:underline">GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card p-4 rounded-lg border" data-category="ai">
+                            <h3 class="text-xl font-bold mb-3">ScrollTrigger Landing Page</h3>
+                            <p class="text-twitter-gray mb-4">A landing page showcasing brand storytelling through GSAP
+                                ScrollTrigger with horizontal scroll, pinning, and reveal animations.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">GSAP</span>
+                                <span class="badge">Frontend</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-twitter-blue hover:underline">Live Demo</a>
+                                <a href="#" class="text-twitter-blue hover:underline">GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card p-4 rounded-lg border" data-category="ai">
+                            <h3 class="text-xl font-bold mb-3">GSAP Product Showcase</h3>
+                            <p class="text-twitter-gray mb-4">A product display animation system using GSAP 3D
+                                transformation and timeline syncing to showcase UI components.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">GSAP</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-twitter-blue hover:underline">Live Demo</a>
+                                <a href="#" class="text-twitter-blue hover:underline">GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card p-4 rounded-lg border" data-category="ai">
+                            <h3 class="text-xl font-bold mb-3">Portfolio Micro-Interactions</h3>
+                            <p class="text-twitter-gray mb-4">Micro-interactions for buttons, cards, and transitions
+                                using GSAP easing and hover animations.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">GSAP</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-twitter-blue hover:underline">Live Demo</a>
+                                <a href="#" class="text-twitter-blue hover:underline">GitHub</a>
+                            </div>
+                        </div>
+
+                        <!-- 2 React + Node.js Projects -->
+                        <div class="project-card p-4 rounded-lg border" data-category="web">
+                            <h3 class="text-xl font-bold mb-3">Real-Time Chat App</h3>
+                            <p class="text-twitter-gray mb-4">A full chat system using React, Node.js, and WebSockets
+                                with typing indicators and online status tracking.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge">React</span>
+                                <span class="badge">Node.js</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-twitter-blue hover:underline">Live Demo</a>
+                                <a href="#" class="text-twitter-blue hover:underline">GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card p-4 rounded-lg border" data-category="web">
+                            <h3 class="text-xl font-bold mb-3">Task Manager API</h3>
+                            <p class="text-twitter-gray mb-4">Backend task management service using Node.js, Express,
+                                and JWT authentication.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge">Node.js</span>
+                                <span class="badge">React</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-twitter-blue hover:underline">GitHub</a>
+                            </div>
+                        </div>
+
+                        <!-- 2 FullStack React Node SQL Projects -->
+                        <div class="project-card p-4 rounded-lg border" data-category="mobile">
+                            <h3 class="text-xl font-bold mb-3">E-Commerce FullStack</h3>
+                            <p class="text-twitter-gray mb-4">A complete e-commerce platform featuring authentication,
+                                admin dashboards, cart logic, SQL database, and product filtering.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge">React</span>
+                                <span class="badge">Node.js</span>
+                                <span class="badge">SQL</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-twitter-blue hover:underline">Live Demo</a>
+                                <a href="#" class="text-twitter-blue hover:underline">GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card p-4 rounded-lg border" data-category="mobile">
+                            <h3 class="text-xl font-bold mb-3">FullStack Blog System</h3>
+                            <p class="text-twitter-gray mb-4">A blog CMS with admin login, rich text editor, MySQL
+                                storage, and public search visitors.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge">FullStack</span>
+                                <span class="badge">Node.js</span>
+                                <span class="badge">React</span>
+                                <span class="badge">SQL</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-twitter-blue hover:underline">Live Demo</a>
+                                <a href="#" class="text-twitter-blue hover:underline">GitHub</a>
+                            </div>
+                        </div>
+
+                        <!-- 2 HTML CSS JavaScript GSAP Projects -->
+                        <div class="project-card p-4 rounded-lg border" data-category="ai">
+                            <h3 class="text-xl font-bold mb-3">Animated Agency Website</h3>
+                            <p class="text-twitter-gray mb-4">A modern creative agency landing page with GSAP intro
+                                animations, hover effects, and responsive layout built using HTML, CSS, and JavaScript.
+                            </p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">GSAP</span>
+                                <span class="badge">HTML</span>
+                                <span class="badge">CSS</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-twitter-blue hover:underline">Live Demo</a>
+                                <a href="#" class="text-twitter-blue hover:underline">GitHub</a>
+                            </div>
+                        </div>
+
+                        <div class="project-card p-4 rounded-lg border" data-category="ai">
+                            <h3 class="text-xl font-bold mb-3">GSAP Parallax Showcase</h3>
+                            <p class="text-twitter-gray mb-4">A creative parallax product showcase with layered depth
+                                movement using pure JavaScript and GSAP ScrollTrigger.</p>
+                            <div class="flex flex-wrap gap-2 mb-4">
+                                <span class="badge">JavaScript</span>
+                                <span class="badge">GSAP</span>
+                                <span class="badge">HTML</span>
+                                <span class="badge">CSS</span>
+                            </div>
+                            <div class="flex space-x-4">
+                                <a href="#" class="text-twitter-blue hover:underline">Live Demo</a>
+                                <a href="#" class="text-twitter-blue hover:underline">GitHub</a>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+            <!-- Experience Tab -->
+            <div id="experience" class="tab-content">
+                <div class="p-4">
+                    <h2 class="text-2xl font-bold mb-4">Experience</h2>
+
+                    <div class="timeline-container">
+                        <!-- Bachelor's Degree in Computer Science -->
+                        <div class="timeline-item">
+                            <h3 class="text-xl font-bold">Bachelor's in Computer Science</h3>
+                            <p class="text-twitter-blue">AMITY University, Lucknow</p>
+                            <p class="text-twitter-gray">2023 - 2026 · 3 yrs</p>
+                            <p class="mt-2">
+                                Completed a 3-year Bachelor's degree in Computer Science with hands-on practical
+                                experience.
+                                Worked on multiple real-world projects including web applications, algorithm
+                                implementations,
+                                and software development tasks. Gained proficiency in programming languages, database
+                                management,
+                                and project collaboration. Delivered practical projects from concept to deployment.
+                            </p>
+                        </div>
+
+                        <!-- Freelance Web Developer -->
+                        <div class="timeline-item">
+                            <h3 class="text-xl font-bold">Freelance Web Developer</h3>
+                            <p class="text-twitter-blue">Self-employed</p>
+                            <p class="text-twitter-gray">Mar 2023 - Present · 2 yrs</p>
+                            <p class="mt-2">
+                                Delivered 15+ freelance projects covering front-end, back-end, and full-stack
+                                development.
+                                Specialized in responsive UI/UX design, CSS, Tailwind CSS, and Node.js backend
+                                integration.
+                                Collaborated with clients to create high-quality, user-friendly applications while
+                                meeting deadlines.
+                                Experienced in managing projects from concept, design, coding, testing, and deployment.
+                            </p>
+                        </div>
+
+                        <!-- Researcher -->
+                        <div class="timeline-item">
+                            <h3 class="text-xl font-bold">AI Researcher</h3>
+                            <p class="text-twitter-blue">Faculty / Researcher Guidance</p>
+                            <p class="text-twitter-gray">2024 - 2025 · 1 yr</p>
+                            <p class="mt-2">
+                                Conducted research on AI and machine learning solutions, focusing on healthcare
+                                applications.
+                                Successfully worked on 2 patient-related AI projects involving data analysis, predictive
+                                modeling,
+                                and solution development. Published findings and developed practical implementations to
+                                improve
+                                healthcare outcomes using AI tools and frameworks.
+                            </p>
+                        </div>
+
+                        <!-- Founder & CEO -->
+                        <div class="timeline-item">
+                            <h3 class="text-xl font-bold">Founder & CEO</h3>
+                            <p class="text-twitter-blue">XBzin Ecosystem</p>
+                            <p class="text-twitter-gray"> 2024 - Present · 2 yrs</p>
+                            <p class="mt-2">
+                                Leading XBzin Ecosystem, a startup providing AI-powered tools, research solutions, and
+                                digital services.
+                                Managing a team of developers and researchers to design and deploy innovative products
+                                including
+                                AI chatbots, and productivity tools. Driving business strategy,
+                                technical
+                                development, and user experience to scale the startup globally.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Achievements Tab -->
+            <div id="achievements" class="tab-content">
+                <div class="p-4">
+                    <h2 class="text-2xl font-bold mb-4">Achievements</h2>
+
+                    <!-- Achievement Posts Feed -->
+                    <div id="achievements-feed">
+                        <!-- Achievement 1 -->
+                        <div class="achievement-post">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                                    <div>
+                                        <div class="font-bold">Mr Bharat</div>
+                                        <div class="text-twitter-gray">@BharatSh2121 · 2h</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p>Just completed my 15th freelance project! 🎉 Built a full-stack e-commerce platform
+                                    with React, Node.js, and MongoDB.</p>
+                                <div class="achievement-media">
+                                    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3RhcnR1cHxlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                        alt="Freelance project">
+                                </div>
+                                <div class="achievement-actions">
+                                    <button class="action-button like-button" data-post-id="1">
+                                        <i class="far fa-heart"></i>
+                                        <span class="like-count">12</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-comment"></i>
+                                        <span>3</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-share-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievement 2 -->
+                        <div class="achievement-post">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                                    <div>
+                                        <div class="font-bold">Mr Bharat</div>
+                                        <div class="text-twitter-gray">@BharatSh2121 · 1d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p>Our startup XBzin AI Hub just crossed 1000 users! 🚀 So grateful for this journey and
+                                    excited for what's ahead.</p>
+                                <div class="achievement-media">
+                                    <video controls>
+                                        <source
+                                            src="https://assets.mixkit.co/videos/preview/mixkit-developer-working-on-code-close-up-5194-large.mp4"
+                                            type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="achievement-actions">
+                                    <button class="action-button like-button liked" data-post-id="2">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="like-count">24</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-comment"></i>
+                                        <span>8</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-share-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievement 3 -->
+                        <div class="achievement-post">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                                    <div>
+                                        <div class="font-bold">Mr Bharat</div>
+                                        <div class="text-twitter-gray">@BharatSh2121 · 3d</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p>Successfully deployed CropGuard AI - an AI-powered farming assistant that helps
+                                    farmers make data-driven decisions. This project was particularly meaningful as it
+                                    addresses real-world agricultural challenges.</p>
+                                <div class="achievement-media">
+                                    <img src="https://images.unsplash.com/photo-1500382017468-9049fed747ef?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFybWluZ3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
+                                        alt="CropGuard AI">
+                                </div>
+                                <div class="achievement-actions">
+                                    <button class="action-button like-button" data-post-id="3">
+                                        <i class="far fa-heart"></i>
+                                        <span class="like-count">18</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-comment"></i>
+                                        <span>5</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-share-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievement 4 -->
+                        <div class="achievement-post">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                                    <div>
+                                        <div class="font-bold">Mr Bharat</div>
+                                        <div class="text-twitter-gray">@BharatSh2121 · 1w</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p>Received the "Innovation Excellence" award for my work on AI-driven mental health
+                                    monitoring system. Honored to be recognized for creating technology that makes a
+                                    positive impact.</p>
+                                <div class="achievement-media">
+                                    <video controls>
+                                        <source
+                                            src="https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-programmer-working-on-a-desk-41551-large.mp4"
+                                            type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="achievement-actions">
+                                    <button class="action-button like-button liked" data-post-id="4">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="like-count">32</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-comment"></i>
+                                        <span>12</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-share-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievement 5 -->
+                        <div class="achievement-post">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                                    <div>
+                                        <div class="font-bold">Mr Bharat</div>
+                                        <div class="text-twitter-gray">@BharatSh2121 · 2w</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p>Published my first research paper on "Optimizing Neural Networks for Edge Devices" in
+                                    the International Journal of AI Research. A milestone in my academic journey!</p>
+                                <div class="achievement-media">
+                                    <img src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8cmVzZWFyY2h8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                                        alt="Research paper">
+                                </div>
+                                <div class="achievement-actions">
+                                    <button class="action-button like-button" data-post-id="5">
+                                        <i class="far fa-heart"></i>
+                                        <span class="like-count">27</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-comment"></i>
+                                        <span>9</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-share-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievement 6 -->
+                        <div class="achievement-post">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                                    <div>
+                                        <div class="font-bold">Mr Bharat</div>
+                                        <div class="text-twitter-gray">@BharatSh2121 · 3w</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p>Completed Google Cloud certification! Expanding my cloud computing skills to build
+                                    more scalable and efficient applications.</p>
+                                <div class="achievement-media">
+                                    <video controls>
+                                        <source
+                                            src="https://assets.mixkit.co/videos/preview/mixkit-hacker-typing-on-computer-while-wearing-hoodie-41551-large.mp4"
+                                            type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="achievement-actions">
+                                    <button class="action-button like-button" data-post-id="6">
+                                        <i class="far fa-heart"></i>
+                                        <span class="like-count">15</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-comment"></i>
+                                        <span>4</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-share-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievement 7 -->
+                        <div class="achievement-post">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                                    <div>
+                                        <div class="font-bold">Mr Bharat</div>
+                                        <div class="text-twitter-gray">@BharatSh2121 · 1mo</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p>My open-source library "React-Animation-Helpers" just crossed 500 stars on GitHub!
+                                    Thank you to everyone who contributed and supported this project.</p>
+                                <div class="achievement-media">
+                                    <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8Y29kaW5nfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
+                                        alt="Open source project">
+                                </div>
+                                <div class="achievement-actions">
+                                    <button class="action-button like-button liked" data-post-id="7">
+                                        <i class="fas fa-heart"></i>
+                                        <span class="like-count">41</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-comment"></i>
+                                        <span>14</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-share-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Achievement 8 -->
+                        <div class="achievement-post">
+                            <div class="flex justify-between items-center mb-2">
+                                <div class="flex items-center">
+                                    <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                                    <div>
+                                        <div class="font-bold">Mr Bharat</div>
+                                        <div class="text-twitter-gray">@BharatSh2121 · 2mo</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-3">
+                                <p>Successfully mentored 10 junior developers through a coding bootcamp. Proud to see
+                                    them grow and secure positions in the tech industry!</p>
+                                <div class="achievement-media">
+                                    <video controls>
+                                        <source
+                                            src="https://assets.mixkit.co/videos/preview/mixkit-woman-coding-on-a-notebook-3983-large.mp4"
+                                            type="video/mp4">
+                                        Your browser does not support the video tag.
+                                    </video>
+                                </div>
+                                <div class="achievement-actions">
+                                    <button class="action-button like-button" data-post-id="8">
+                                        <i class="far fa-heart"></i>
+                                        <span class="like-count">22</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-comment"></i>
+                                        <span>7</span>
+                                    </button>
+                                    <button class="action-button">
+                                        <i class="far fa-share-square"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Tab -->
+            <div id="blog" class="tab-content">
+                <div class="p-4">
+                    <h2 class="text-2xl font-bold mb-4">Blog & Threads</h2>
+
+                    <!-- Blog 1 -->
+                    <div class="twitter-post p-4 mb-4">
+                        <div class="flex">
+                            <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                            <div class="flex-1">
+                                <div class="font-bold">Mr Bharat</div>
+                                <div class="text-twitter-gray">@BharatSh2121 · 3d</div>
+                                <div class="mt-3">
+                                    <p>Just published a new blog post: "Development of Projects"</p>
+                                    <p class="mt-2">
+                                        Project development is the structured process of transforming an initial idea
+                                        into a functional and efficient outcome.
+                                        Every project begins with ideation and planning, defining objectives, scope, and
+                                        feasibility. This is followed by design and prototyping to visualize the product
+                                        before implementation.
+                                    </p>
+                                    <p class="mt-2">
+                                        The development phase is where coding, building, and structuring take place.
+                                        Using agile methods like Scrum or Kanban ensures flexibility and continuous
+                                        improvement. Regular testing and feedback improve reliability.
+                                    </p>
+                                    <p class="mt-2">
+                                        Effective project development combines technical execution with collaboration
+                                        and problem-solving. Success depends on how well the project meets user needs,
+                                        innovation goals, and sustainability.
+                                    </p>
+                                </div>
+                                <div class="mt-3 flex space-x-4 text-twitter-gray">
+                                    <button class="flex items-center twitter-icon">
+                                        <i class="far fa-comment mr-1"></i>
+                                        <span>12</span>
+                                    </button>
+                                    <button class="flex items-center twitter-icon">
+                                        <i class="fas fa-retweet mr-1"></i>
+                                        <span>8</span>
+                                    </button>
+                                    <button class="flex items-center twitter-icon">
+                                        <i class="far fa-heart mr-1"></i>
+                                        <span>56</span>
+                                    </button>
+                                    <button class="flex items-center twitter-icon">
+                                        <i class="far fa-share-square mr-1"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Blog 2 -->
+                    <div class="twitter-post p-4">
+                        <div class="flex">
+                            <img src="image.png" alt="Mr Bharat" class="w-12 h-12 rounded-full mr-3">
+                            <div class="flex-1">
+                                <div class="font-bold">Mr Bharat</div>
+                                <div class="text-twitter-gray">@BharatSh2121 · 1w</div>
+                                <div class="mt-3">
+                                    <p>Just published a new blog post: "AI vs Humane"</p>
+                                    <p class="mt-2">
+                                        The debate of AI vs Humane is now a defining issue of our era. AI excels at
+                                        speed, precision, and analyzing vast datasets, reshaping industries from
+                                        healthcare to finance.
+                                    </p>
+                                    <p class="mt-2">
+                                        Humans bring creativity, intuition, empathy, and moral reasoning—qualities
+                                        machines cannot replicate. Emotional depth forms the foundation of ethics, art,
+                                        and decision-making.
+                                    </p>
+                                    <p class="mt-2">
+                                        The goal is not AI versus humans, but AI with humanity. Responsible innovation
+                                        designs AI to enhance human welfare, amplifying our capabilities while
+                                        respecting human values.
+                                    </p>
+                                </div>
+                                <div class="mt-3 flex space-x-4 text-twitter-gray">
+                                    <button class="flex items-center twitter-icon">
+                                        <i class="far fa-comment mr-1"></i>
+                                        <span>18</span>
+                                    </button>
+                                    <button class="flex items-center twitter-icon">
+                                        <i class="fas fa-retweet mr-1"></i>
+                                        <span>10</span>
+                                    </button>
+                                    <button class="flex items-center twitter-icon">
+                                        <i class="far fa-heart mr-1"></i>
+                                        <span>74</span>
+                                    </button>
+                                    <button class="flex items-center twitter-icon">
+                                        <i class="far fa-share-square mr-1"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <!-- Contact Tab -->
+            <div id="contact" class="tab-content">
+                <div class="p-4">
+                    <h2 class="text-2xl font-bold mb-4">Contact / Hire Me</h2>
+
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Get In Touch</h3>
+                            <p class="mb-6">I'm available for freelance projects, consulting, and full-time
+                                opportunities. Feel free to reach out!</p>
+
+                            <div class="space-y-4">
+                                <a href="#"
+                                    class="flex items-center p-3 rounded-lg border hover:bg-twitter-blue hover:bg-opacity-10 transition">
+                                    <i class="fab fa-whatsapp text-green-500 text-xl mr-3"></i>
+                                    <span>WhatsApp: +91 9771748122</span>
+                                </a>
+                                <a href="https://www.linkedin.com/in/bhartshukla/"
+                                    class="flex items-center p-3 rounded-lg border hover:bg-twitter-blue hover:bg-opacity-10 transition">
+                                    <i class="fab fa-linkedin text-blue-500 text-xl mr-3"></i>
+                                    <span>LinkedIn: Bhart Shukla</span>
+                                </a>
+                                <a href="https://github.com/bhartshukla"
+                                    class="flex items-center p-3 rounded-lg border hover:bg-twitter-blue hover:bg-opacity-10 transition">
+                                    <i class="fab fa-github text-gray-700 dark:text-gray-300 text-xl mr-3"></i>
+                                    <span>GitHub: @BhartShukla</span>
+                                </a>
+                                <a href="#"
+                                    class="flex items-center p-3 rounded-lg border hover:bg-twitter-blue hover:bg-opacity-10 transition">
+                                    <i class="far fa-envelope text-red-500 text-xl mr-3"></i>
+                                    <span>Email: itsmebhsh@gmail.com</span>
+                                </a>
+                            </div>
+
+                            <div class="mt-4">
+                                <a href="bh.pdf" download="MrBharat_Resume.pdf"
+                                    class="border border-twitter-blue text-twitter-blue font-bold py-2 px-4 rounded-full hover:bg-twitter-blue hover:bg-opacity-10 transition flex items-center justify-center gap-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none"
+                                        viewBox="0 0 24 24" stroke="currentColor">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                            d="M4 16v2a2 2 0 002 2h12a2 2 0 002-2v-2M7 10l5 5m0 0l5-5m-5 5V4" />
+                                    </svg>
+                                    Download Résumé
+                                </a>
+                            </div>
+                        </div>
+
+                        <div>
+                            <h3 class="text-xl font-bold mb-4">Send a Message</h3>
+                            <form class="space-y-4">
+                                <div>
+                                    <label for="name" class="block mb-2">Your Name</label>
+                                    <input type="text" id="name" class="w-full p-3 rounded-lg border bg-transparent"
+                                        placeholder="Enter your name">
+                                </div>
+                                <div>
+                                    <label for="email" class="block mb-2">Your Email</label>
+                                    <input type="email" id="email" class="w-full p-3 rounded-lg border bg-transparent"
+                                        placeholder="Enter your email">
+                                </div>
+                                <div>
+                                    <label for="subject" class="block mb-2">Subject</label>
+                                    <input type="text" id="subject" class="w-full p-3 rounded-lg border bg-transparent"
+                                        placeholder="Enter subject">
+                                </div>
+                                <div>
+                                    <label for="message" class="block mb-2">Message</label>
+                                    <textarea id="message" rows="5" class="w-full p-3 rounded-lg border bg-transparent"
+                                        placeholder="Enter your message"></textarea>
+                                </div>
+                                <button type="submit"
+                                    class="w-full bg-twitter-blue text-white font-bold py-3 rounded-full hover:bg-blue-600 transition">
+                                    Send Message
+                                </button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Sidebar -->
+        <div class="twitter-widgets w-1/5 hidden lg:block p-4">
+            <div class="mb-6">
+                <h3 class="text-xl font-bold mb-4">What's Happening</h3>
+                <div class="space-y-4">
+                    <div class="p-3 rounded-lg border">
+                        <p class="text-xs text-twitter-gray">Trending in Technology</p>
+                        <p class="font-bold">#AIRevolution</p>
+                        <p class="text-xs text-twitter-gray">15.2K Tweets</p>
+                    </div>
+                    <div class="p-3 rounded-lg border">
+                        <p class="text-xs text-twitter-gray">Trending in India</p>
+                        <p class="font-bold">#TechStartups</p>
+                        <p class="text-xs text-twitter-gray">8.7K Tweets</p>
+                    </div>
+                    <div class="p-3 rounded-lg border">
+                        <p class="text-xs text-twitter-gray">Programming · Trending</p>
+                        <p class="font-bold">#WebDevelopment</p>
+                        <p class="text-xs text-twitter-gray">5.3K Tweets</p>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg font-bold mb-3">Services</h3>
+                <div class="space-y-3">
+
+                    <!-- Service 1 -->
+                    <a href="https://xbzin.in/" target="_blank"
+                        class="flex items-center space-x-3 hover:bg-twitter-hover rounded-lg p-2 transition">
+                        <img src="https://img.freepik.com/free-photo/web-design-concept-with-drawings_1134-77.jpg?semt=ais_hybrid&w=740&q=80"
+                            alt="Service" class="w-10 h-10 rounded-full">
+                        <div>
+                            <div class="font-semibold text-sm">Web Development</div>
+                            <div class="text-twitter-gray text-xs">
+                                Custom websites with responsive UI/UX, backend integration, and deployment.
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Service 2 -->
+                    <a href="https://xbzin.in/" target="_blank"
+                        class="flex items-center space-x-3 hover:bg-twitter-hover rounded-lg p-2 transition">
+                        <img src="https://media.istockphoto.com/id/1143678440/photo/personal-growth-concept.jpg?s=612x612&w=0&k=20&c=93yxlOtOZWPUPRFardh7fAPaY-u0xZf9q0jjEaO0-To="
+                            alt="Service" class="w-10 h-10 rounded-full">
+                        <div>
+                            <div class="font-semibold text-sm">Project Development</div>
+                            <div class="text-twitter-gray text-xs">
+                                End-to-end project building from idea validation to deployment & optimization.
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Service 3 -->
+                    <a href="https://xbzin.in/" target="_blank"
+                        class="flex items-center space-x-3 hover:bg-twitter-hover rounded-lg p-2 transition">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrRjHRGtD0y85qJJ_MfshiEa3V_3SbRT1geQ&s"
+                            alt="Service" class="w-10 h-10 rounded-full">
+                        <div>
+                            <div class="font-semibold text-sm">Logo Design</div>
+                            <div class="text-twitter-gray text-xs">
+                                Creative and professional brand logo design with modern aesthetics.
+                            </div>
+                        </div>
+                    </a>
+
+                    <!-- Service 4 -->
+                    <a href="https://xbzin.in/" target="_blank"
+                        class="flex items-center space-x-3 hover:bg-twitter-hover rounded-lg p-2 transition">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR4-uN1wTKnbFvHeK7msH-9NpZqiUlMyeofSCtJjt9eHQoL9SLOlR64gQM&s"
+                            alt="Service" class="w-10 h-10 rounded-full">
+                        <div>
+                            <div class="font-semibold text-sm">AI-Based Solutions</div>
+                            <div class="text-twitter-gray text-xs">
+                                Intelligent automation tools, chatbots, and ML-driven advisory systems.
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+
+
+            <!-- Footer / Links -->
+            <div class="mt-6 text-xs text-twitter-gray">
+                <div class="flex flex-wrap gap-2 mb-2">
+                    <a href="#" class="hover:underline">Terms of Service</a>
+                    <a href="#" class="hover:underline">Privacy Policy</a>
+                    <a href="#" class="hover:underline">Cookie Policy</a>
+                    <a href="#" class="hover:underline">Accessibility</a>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <a href="#" class="hover:underline">Ads info</a>
+                    <a href="#" class="hover:underline">More</a>
+                    <span>© 2025 Mr Bharat Portfolio</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Chatbot -->
+    <div class="chatbot">
+        <div id="chatbot-window" class="chatbot-window">
+            <div class="chatbot-header">
+                <div class="flex items-center">
+                    <div class="relative">
+                        <img src="image.png" alt="Mr Bharat" class="w-10 h-10 rounded-full">
+                        <div class="active-indicator"></div>
+                    </div>
+                    <div class="ml-3">
+                        <div class="font-bold">Mr Bhart</div>
+                        <div class="text-twitter-gray text-sm">Ask me about my work</div>
+                    </div>
+                </div>
+            </div>
+            <div class="chatbot-messages flex flex-col" id="chatbot-messages">
+                <div class="message bot-message">
+                    Hi! I'm Mr Bhart's AI assistant. How can I help you learn about my work and experience?
+                </div>
+            </div>
+            <div class="chatbot-input">
+                <div class="flex">
+                    <input type="text" id="chatbot-input" placeholder="Ask about my work..."
+                        class="flex-1 p-3 rounded-l-lg border bg-transparent">
+                    <button id="send-message" class="bg-twitter-blue text-white p-3 rounded-r-lg">
+                        <i class="fas fa-paper-plane"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <button id="chatbot-toggle"
+            class="w-14 h-14 rounded-full bg-twitter-blue text-white flex items-center justify-center shadow-lg">
+            <i class="fas fa-robot text-xl"></i>
+        </button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
